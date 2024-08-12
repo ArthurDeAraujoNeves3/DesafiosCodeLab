@@ -1,7 +1,192 @@
 :root {
 
-    --bg: red,
+    --theme: #E07B67;
+    --bg: #121214;
+    --dark20: #17171A;
+    --dark30: #202024;
+    --dark40: #252529;
+    --text: #FFFFFF;
+    --text2: #AFABB6;
+    --border: 8px;
+    --buttonHover: rgb(224, 123, 103, .2);
+}
+
+/*Reset das configurações padrões do site*/
+* {
+
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
 
 }
 
+/*Titulo*/
+@font-face {
 
+    src: url("./src/fonts/Title/SpaceGrotesk-Bold.ttf");
+    font-family: "Title";
+
+}
+/*Texto*/
+@font-face {
+
+    src: url("./src/fonts/Text/Inter_24pt-SemiBold.ttf");
+    font-family: "Text";
+
+}
+
+body {
+
+    font-family: "Text";
+    overflow-x: hidden;
+    color: var(--text);
+    background-color: var(--bg);
+    
+}
+
+.hero {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    gap: 48px;
+    background-color: var(--dark20);
+    width: 100%;
+    height: 283px;
+}
+/*Titulo*/
+.hero p {
+
+    color: var(--text);
+    font-family: "Title";
+    font-size: 40px;
+    text-align: center;
+}
+/*Code destacado*/
+.hero p .textoDestacado {
+
+    color: var(--theme);
+
+}
+/*Barra de pesquisa*/
+.hero div {
+
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    width: 1200px;
+    height: 56px;
+    background-color: var(--dark30);
+    border: 2px solid var(--dark40);
+    border-radius: var(--border);
+    padding: 16px 24px;
+
+}
+/*Input*/
+.barraDePesquisa {
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 56px;
+    color: var(--text2);
+    font-family: "Text";
+    font-size: 20px;
+    
+}
+.barraDePesquisa::placeholder {
+
+    color: var(--text2);
+    font-family: "Text";
+    font-size: 20px;
+    
+}
+
+/*Div que organiza todas as postagens*/
+.postagens {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+    padding: 0px 20px;
+    padding-bottom: 40px;
+    max-width: 100%;
+    width: 1200px;
+
+}
+.postagem {
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--dark20);
+    border: 2px solid var(--dark40);
+    padding: 40px;
+    border-radius: var(--border);
+
+}
+/*Postagem com o efeito de curtida*/
+.postagemCurtida {
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--dark20);
+    border: 2px solid var(--theme);
+    padding: 40px;
+    border-radius: var(--border);
+
+}
+/*data e botão de curtida*/
+.postagemHeader {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+.postagemHeader p {
+
+    color: var(--theme);
+
+}
+.btnCurtir {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transition: 0.2s;
+    padding: 10px;
+    font-size: 20px;
+    color: var(--theme);
+    border-radius: 999px;
+    cursor: pointer;
+
+}
+.btnCurtir:hover {
+
+    background-color: var(--buttonHover);
+
+}
+/*Textos*/
+.postagemConteudo {
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+.postagemConteudo .Texto {
+
+    color: var(--text2);
+
+}
