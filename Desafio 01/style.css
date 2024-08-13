@@ -106,14 +106,6 @@ body {
     
 }
 
-/*Div apenas para centralizar*/
-.postagensCenter {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
 /*Div que organiza todas as postagens*/
 .postagens {
 
