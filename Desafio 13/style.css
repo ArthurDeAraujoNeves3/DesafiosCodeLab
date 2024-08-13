@@ -1,7 +1,133 @@
 :root {
 
-    --bg: red,
+    --theme: #d9ff00;
+    --bg: #0b0b0b;
+    --details: #0E0E0E;
+    --text: #FFFFFF;
+    --subTitle: #a3a3a3;
+    --border: 8px;
+}
+
+/*Reset das configurações padrões do site*/
+* {
+
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
 
 }
 
+/*Titulo*/
+@font-face {
 
+    src: url("./src/fonts/Title/OpenSans-ExtraBold.ttf");
+    font-family: "Title";
+
+}
+/*Texto*/
+@font-face {
+
+    src: url("./src/fonts/Text/Inter_24pt-Medium.ttf");
+    font-family: "Text";
+
+}
+
+body {
+
+    font-family: "Text";
+    overflow-x: hidden;
+    background-color: var(--bg);
+    color: var(--text);
+    
+}
+
+header {
+
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    border-bottom: 3px solid var(--details);
+
+}
+header .Titulo {
+
+    font-family: "Title";
+    color: var(--theme);
+    font-size: 25px;
+    
+}
+.NavsBtns {
+
+    display: flex;
+    align-items: center;
+    gap: 20px;  
+
+}
+.NavBtn {
+
+    font-family: "Text";
+    color: var(--subTitle);
+    transition: 0.2s;
+    cursor: pointer;
+
+}
+.NavBtn:hover {
+
+    color: var(--text);
+
+}
+
+.Hero {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+
+}
+.HeroCenter {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 1200px;
+
+}
+.Apresentacao {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.Nome {
+
+    font-size: 30px;
+    color: var(--theme);
+    font-family: "Title";
+
+}
+.MeuGithub {
+
+    font-family: "Title";
+    color: var(--bg);
+    background-color: var(--theme);
+    border: none;
+    outline: none;
+    padding: 10px 0px;
+    width: 200px;
+    border-radius: var(--border);
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+.MeuGithub:hover {
+
+    filter: brightness(.8);
+
+}
