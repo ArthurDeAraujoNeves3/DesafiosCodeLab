@@ -1,7 +1,284 @@
 :root {
 
-    --bg: red,
+    --text: #100F0F;
+    --details: #E2E2E2;
+    --bg: #F9F9F9;
+    --border: 4px;
+}
+
+/*Reset das configurações padrões do site*/
+* {
+
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
 
 }
 
+/*Texto*/
+@font-face {
 
+    src: url("./src/fonts/Text/Nunito-Bold.ttf");
+    font-family: "Text";
+
+}
+
+body {
+
+    font-family: "Text";
+    overflow-x: hidden;
+    background-color: var(--bg);
+    color: var(--text);
+    
+}
+
+header {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid var(--details);
+    padding: 0px 20px;
+}
+.headerCenter {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    height: 100px;
+    
+}
+.RedesSociais, .OutrosIcones {
+
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    
+}
+.BtnHeader {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+.BtnHeader:hover {
+
+    background-color: var(--details);
+
+}
+
+main {
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+
+}
+.MainCenter {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    width: 1200px;
+    padding-top: 20px;
+    gap: 20px;
+
+}
+.BotoesNavegacao {
+    
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    
+}
+.NavBtn {
+
+    padding: 10px 20px;
+    border-radius: var(--border);
+    cursor: pointer;
+    transition: 0.2s;
+}
+.NavBtn:hover {
+
+    background-color: var(--details);
+    
+}
+
+.Postagens {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+}
+/*Três primeiros itens*/
+.PostagensTopo {
+
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+}
+.Postagem {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--border);
+
+}
+/*Data de publicação*/
+.Postagem .Data {
+
+    color: var(--bg);
+
+}
+.Postagem .Title {
+
+    color: var(--bg);
+    font-size: 24px;
+
+}
+
+.CarregarMais {
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px 20px;
+    border-radius: var(--border);
+    cursor: pointer;
+    transition: 0.2s;
+    gap: 16px;
+
+}
+.CarregarMais:hover {
+
+    background-color: var(--details);
+
+}
+.CarregarMais p {
+
+    text-transform: uppercase;
+
+}
+
+footer {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid var(--details);
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 20px;
+
+}
+.footerCenter {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 73px;
+    max-width: 100%;
+    width: 1200px;
+
+}
+
+.Linguagens {
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px 20px;
+    border-radius: var(--border);
+    cursor: pointer;
+    transition: 0.2s;
+    gap: 16px;
+
+}
+.Linguagens:hover {
+
+    background-color: var(--details);
+
+}
+
+@media screen and (max-width: 1100px) {
+
+    .headerCenter .Logo {
+
+        width: 150px;
+
+    }
+    .RedesSociais {
+
+        display: none;
+        visibility: none;
+
+    }
+    .PostagensTopo {
+
+        flex-direction: column;
+        
+    } 
+
+}
+@media screen and (max-width: 750px) {
+
+    .footerCenter {
+
+        align-items: start;
+        flex-direction: column;
+        gap: 64px;
+
+    }
+    .footerCenter .BotoesNavegacao {
+
+        align-items: start;
+        gap: 0;
+        flex-direction: column;
+
+    }
+
+}
+@media screen and (max-width: 560px) {
+
+    .headerCenter .Logo {
+
+        width: 100px;
+
+    }
+
+    .MainCenter .BotoesNavegacao {
+
+        display: none;
+        visibility: none;
+
+    }
+
+    .OutrosIcones {
+
+        gap: 8px;
+
+    }
+
+}
