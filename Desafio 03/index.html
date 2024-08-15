@@ -1,168 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Desafio #03</title>
+    <title>Desafio #03 | Bootstrap</title>
 </head>
+
 <body>
 
-    <div class="Hero">
+    <div class="container d-flex align-items-center justify-content-center flex-column-reverse flex-xl-row gap-5 w-100 pt-5">
 
-        <div class="Apresentacao">
+        <div class="w-100 d-flex flex-column gap-2 Apresentacao">
 
-            <div class="HeroTextos">
+            <div class="w-100 d-flex flex-column gap-2">
 
-                <p class="Titulo">Encontre os <span class="textoDestacado">melhores artigos</span> de programação em um só lugar</p>
+                <div class="h4 Titulo">Encontre os <span class="TextoDestacado">melhores artigos</span> de programação em um só lugar</div>
                 <p class="Descricao">Explore o topo da programação em um só lugar! </br> Seu destino único para dicas e tendências atuais.</p>
 
             </div> <!--Texto-->
 
-            <button class="botao">Buscar artigos</button>
+            <button type="submit" class="btn btn-primary text-uppercase">Buscar artigos</button>
 
         </div> <!--Apresentacao-->
 
-        <div>
+        <figure class="">
 
-            <img src="./src/assets/img/Hero.png" alt="Melhores artigos aqui" loading="lazy" draggable="false" class="HeroImage" />
+            <img src="./src/assets/img/Hero.png" alt="Melhores artigos aqui" loading="lazy" draggable="false" class="img-fluid HeroImage" />
 
-        </div> <!--Imagem-->
+        </figure> <!--Imagem-->
 
     </div> <!--Hero-->
 
-    <div class="ArtigosCenter">
+    <main class="Secao d-flex align-items-center justify-content-center py-5">
 
-        <div class="Artigos">
+        <div class="container d-flex flex-column align-items-center w-100 gap-5">
 
-            <p>Artigos recomendados</p>
+            <h4 class="Titulo">Artigos recomendados</h4>
 
-            <div class="Postagens">
+            <div class="w-100 align-items-center justify-content-center row row-cols-3 column-gap-3 row-gap-3">
 
-                <div class="Postagem">
+                <div class="col rounded-1 px-0 Postagem">
 
-                    <div class="Banner">
+                    <figure class="w-100">
 
-                        <img src="./src/assets/img/Artigos/01.png" alt="Banner" loading="lazy" draggable="false" class="" />
+                        <img src="./src/assets/img/Artigos/01.png" class="card-img-top" alt="Banner" loading="lazy" draggable="false" />
 
-                    </div> <!--Banner da postagem-->
+                    </figure> <!--Banner-->
 
-                    <div class="Textos">
+                    <div class="card-body w-100 d-flex flex-column gap-3 pb-3 px-3">
 
-                        <p class="Titulo">O que é linguagem de programação? Conheça as principais</p>
-                        <p class="Descricao">Uma das mais populares vertentes da tecnologia da informação, a área de...</p>
-
+                        <h5 class="Titulo">O que é linguagem de programação? Conheça as principais</h5>
+                        <p class="card-text">Uma das mais populares vertentes da tecnologia da informação, a área de...</p>
+                        
                     </div> <!--Textos-->
 
                 </div> <!--Postagem 01-->
 
-                <div class="Postagem">
+                <div class="col rounded-1 px-0 Postagem">
 
-                    <div class="Banner">
+                    <figure class="w-100">
 
-                        <img src="./src/assets/img/Artigos/02.png" alt="Banner" loading="lazy" draggable="false" class="" />
+                        <img src="./src/assets/img/Artigos/02.png" class="card-img-top" alt="Banner" loading="lazy" draggable="false" />
 
-                    </div> <!--Banner da postagem-->
+                    </figure> <!--Banner-->
 
-                    <div class="Textos">
+                    <div class="card-body w-100 d-flex flex-column gap-3 pb-3 px-3">
 
-                        <p class="Titulo">Python: por que a linguagem é tão usada para Data Science e finanças?</p>
-                        <p class="Descricao">O mundo da programação conta com algumas opções de linguagem para...</p>
-
+                        <h5 class="Titulo">Python: por que a linguagem é tão usada para Data Science e finanças?</h5>
+                        <p class="card-text">O mundo da programação conta com algumas opções de linguagem para...</p>
+                        
                     </div> <!--Textos-->
 
                 </div> <!--Postagem 02-->
 
-                <div class="Postagem">
+                <div class="col rounded-1 px-0 Postagem">
 
-                    <div class="Banner">
+                    <figure class="w-100">
 
-                        <img src="./src/assets/img/Artigos/03.png" alt="Banner" loading="lazy" draggable="false" class="" />
+                        <img src="./src/assets/img/Artigos/03.png" class="card-img-top" alt="Banner" loading="lazy" draggable="false" />
 
-                    </div> <!--Banner da postagem-->
+                    </figure> <!--Banner-->
 
-                    <div class="Textos">
+                    <div class="card-body w-100 d-flex flex-column gap-3 pb-3 px-3">
 
-                        <p class="Titulo">GitHub tem receita de US$ 1 bilhão e 90 milhões de usuários</p>
-                        <p class="Descricao">O popular serviço de repositório de código GitHub foi adquirido pela...</p>
-
+                        <h5 class="Titulo">GitHub tem receita de US$ 1 bilhão e 90 milhões de usuários</h5>
+                        <p class="card-text">O popular serviço de repositório de código GitHub foi adquirido pela....</p>
+                        
                     </div> <!--Textos-->
 
                 </div> <!--Postagem 03-->
 
-                <div class="Postagem">
+                <div class="col rounded-1 px-0 Postagem">
 
-                    <div class="Banner">
+                    <figure class="w-100">
 
-                        <img src="./src/assets/img/Artigos/04.png" alt="Banner" loading="lazy" draggable="false" class="" />
+                        <img src="./src/assets/img/Artigos/04.png" class="card-img-top" alt="Banner" loading="lazy" draggable="false" />
 
-                    </div> <!--Banner da postagem-->
+                    </figure> <!--Banner-->
 
-                    <div class="Textos">
+                    <div class="card-body w-100 d-flex flex-column gap-3 pb-3 px-3">
 
-                        <p class="Titulo">15 comandos no GIT que os desenvolvedores precisam saber</p>
-                        <p class="Descricao">Dominar os comandos GIT é uma habilidade que se conquista com...</p>
-
+                        <h5 class="Titulo">15 comandos no GIT que os desenvolvedores precisam saber</h5>
+                        <p class="card-text">Dominar os comandos GIT é uma habilidade que se conquista com...</p>
+                        
                     </div> <!--Textos-->
 
                 </div> <!--Postagem 04-->
 
-                <div class="Postagem">
+                <div class="col rounded-1 px-0 Postagem">
 
-                    <div class="Banner">
+                    <figure class="w-100">
 
-                        <img src="./src/assets/img/Artigos/05.png" alt="Banner" loading="lazy" draggable="false" class="" />
+                        <img src="./src/assets/img/Artigos/05.png" class="card-img-top" alt="Banner" loading="lazy" draggable="false" />
 
-                    </div> <!--Banner da postagem-->
+                    </figure> <!--Banner-->
 
-                    <div class="Textos">
+                    <div class="card-body w-100 d-flex flex-column gap-3 pb-3 px-3">
 
-                        <p class="Titulo">GIT e GitHub: o que são e quais as diferenças entre eles?</p>
-                        <p class="Descricao">Git e GibHub são dois softwares de controle de versão essenciais para...</p>
-
+                        <h5 class="Titulo">GIT e GitHub: o que são e quais as diferenças entre eles?</h5>
+                        <p class="card-text">Git e GibHub são dois softwares de controle de versão essenciais para...</p>
+                        
                     </div> <!--Textos-->
 
                 </div> <!--Postagem 05-->
 
-                <div class="Postagem">
+                <div class="col rounded-1 px-0 Postagem">
 
-                    <div class="Banner">
+                    <figure class="w-100">
 
-                        <img src="./src/assets/img/Artigos/06.png" alt="Banner" loading="lazy" draggable="false" class="" />
+                        <img src="./src/assets/img/Artigos/06.png" class="card-img-top" alt="Banner" loading="lazy" draggable="false" />
 
-                    </div> <!--Banner da postagem-->
+                    </figure> <!--Banner-->
 
-                    <div class="Textos">
+                    <div class="card-body w-100 d-flex flex-column gap-3 pb-3 px-3">
 
-                        <p class="Titulo">GitHub Copilot ganha integração com GPT-4 e interface conversacional</p>
-                        <p class="Descricao">O GitHub Copilot, ferramenta de desenvolvimento baseada em IA...</p>
-
+                        <h5 class="Titulo">GitHub Copilot ganha integração com GPT-4 e interface conversacional</h5>
+                        <p class="card-text">O GitHub Copilot, ferramenta de desenvolvimento baseada em IA...</p>
+                        
                     </div> <!--Textos-->
 
                 </div> <!--Postagem 06-->
 
             </div> <!--Postagens-->
 
-        </div> 
+        </div>
 
-    </div> <!--Artigos-->
+    </main> <!--Artigos-->
 
-    <footer>
+    <footer class="container d-flex flex-column justify-content-center align-items-center gap-5 py-5 px-3">
 
-        <p>Entre em contato</p>
+        <h4 class="Titulo">Entre em contato</h4>
+        
+        <form class="d-flex flex-column align-items-center gap-2">
 
-        <form>
+            <div class="w-100 mb-3">
 
-            <input type="text" placeholder="Nome" />
-            <input type="text" placeholder="Email" />
+              <input type="text" class="form-control Input" aria-describedby="emailHelp" placeholder="Nome" />
 
-            <textarea placeholder="Assunto da mensagem"></textarea>
+            </div> <!--Nome-->
 
-            <button>Entrar em contato</button>
+            <div class="w-100 mb-3">
+
+              <input type="email" class="form-control Input" placeholder="Email" />
+
+            </div> <!--Email-->
+
+            <div class="w-100 form-floating">
+
+                <textarea class="form-control Textarea" placeholder="Assunto da mensagem"></textarea>
+                
+            </div> <!--Textarea-->
+            
+            <button type="" class="ButtonForm text-uppercase">Entrar em contato</button>
 
         </form>
 
     </footer>
-    
+
 </body>
+
 </html>

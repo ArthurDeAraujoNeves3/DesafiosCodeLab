@@ -44,262 +44,114 @@ body {
     
 }
 
-.Hero {
+.container {
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-    padding: 20px 20px;
-    background-color: var(--bg2);
-
-}
-.Apresentacao {
+    max-width: 1200px !important;
     
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+}
+
+.Secao {
+
+    background-color: var(--bg);
 
 }
-.HeroTextos {
-    
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    width: 500px;
-
-}
-.HeroTextos .Titulo {
-    
-    font-family: "Title";
-    font-size: 25px;
-
-}
-.textoDestacado {
+.TextoDestacado {
 
     color: var(--theme);
 
 }
-.botao {
 
-    max-width: 100%;
-    width: 200px;
-    height: 50px;
-    border-radius: var(--border);
-    background-color: var(--theme);
-    border: 0;
-    outline: 0;
-    font-size: 15px;
-    font-family: "Title";
-    text-transform: uppercase;
-    color: var(--textButton);
-    transition: 0.2s;
-    cursor: pointer;
+.Apresentacao {
+
+    max-width: 100% !important;
+    width: 450px !important;
 
 }
-.botao:hover {
-
-    filter: brightness(.9);
-}
-.HeroImage {
-
-    max-width: 100%;
-    width: 100%;
-
-}
-
-/*Div apenas para centralização da seção*/
-.ArtigosCenter {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--bg);
-    padding: 40px 0px;
-    
-}
-.Artigos {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-    width: 1200px;
-    gap: 50px;
-
-}
-/*Título*/
-.Artigos p {
+.Titulo {
 
     font-family: "Title";
-    font-size: 25px;
 
 }
-/*Div que organiza as postagens*/
-.Postagens {
 
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    align-items: center;
-    justify-items: center;
-    padding: 0px 20px;
-
-}
 .Postagem {
 
-    max-width: 100%;
-    width: 380px;
-    border-radius: var(--border);
     background-color: var(--bg);
     border: 2px solid var(--details);
-
-}
-/*Banner*/
-.Postagem > .Banner img {
-
     max-width: 100%;
-    width: 100%;
-
-}
-/*Textos da postagem*/
-.Postagem .Textos {
-
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 32px 24px;
-
-}
-.Textos .Titulo {
-
-    font-family: "Title";
-    font-size: 15px;
-
-}
-.Textos .Descricao {
-
-    font-family: "Text";
-    font-size: 15px;
+    width: 380px;
 
 }
 
-footer {
+form {
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 40px 20px;
+    max-width: 100% !important;
 
 }
-/*Titulo*/
-footer p {
+.Input {
 
-    font-family: "Title";
-    font-size: 25px;
-
-}
-footer form {
-
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-
-}
-footer form input {
-
-    background-color: var(--bg);
-    border: 1px solid var(--borderColor);
-    border-radius: var(--border);
-    outline: 0;
     max-width: 100%;
     width: 500px;
     height: 50px;
-    padding: 19px 24px;
 
 }
-footer textarea {
+.Textarea {
 
-    background-color: var(--bg);
-    border: 1px solid var(--borderColor);
-    border-radius: var(--border);
-    outline: 0;
     max-width: 100%;
     width: 500px;
-    height: 150px;
-    padding: 19px 24px;
-    font-family: "Text";
-    resize: none;
+    height: 150px !important;
+    resize: none !important;
+    
+}
+.Textarea:focus {
+
+    padding-top: 16px !important;
 
 }
-footer textarea::placeholder {
+.Textarea::placeholder {
 
-    font-family: "Text";
+    color: gray !important;
 
 }
-footer form button {
+.ButtonForm {
 
-    max-width: 100%;
-    width: 100%;
-    height: 35px;
-    border-radius: var(--border);
-    background-color: var(--theme);
-    border: 0;
-    outline: 0;
-    font-size: 12px;
     font-family: "Title";
-    text-transform: uppercase;
     color: var(--textButton);
+    border-radius: var(--border);
+    font-size: 15px;
+    max-width: 100%;
+    width: 500px;
+    height: 35px;
+    background-color: var(--theme);
+    border: none;
     transition: 0.2s;
-    cursor: pointer;
 
 }
-footer form button:hover {
+.ButtonForm:hover {
 
     filter: brightness(.9);
-
-}
-
-@media screen and ( max-width: 1270px ) {
-
-    .Postagens {
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-        align-items: center;
-        justify-items: center;
     
-    }
-
-}
-@media screen and ( max-width: 1200px ) {
-
-    .Hero {
-
-        flex-direction: column-reverse;
-    }
-
-}
-@media screen and ( max-width: 830px ) {
-
-    .Postagens {
-
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        align-items: center;
-        justify-items: center;
-    
-    }
-
 }
 
+input[type=text]:focus, input[type=email]:focus, .Textarea:focus {
+
+    box-shadow: none;
+    border-color: var(--theme);
+
+}
+button[type=submit] {
+
+    font-family: "Title";
+    font-size: 15px;
+    width: 200px;
+    height: 50px;
+    background-color: var(--theme);
+    border: none;
+    transition: 0.2s;
+
+}
+button[type=submit]:hover {
+
+    filter: brightness(.9);
+    background-color: var(--theme);
+
+}
