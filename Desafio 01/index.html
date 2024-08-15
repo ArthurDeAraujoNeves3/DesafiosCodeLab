@@ -1,100 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/736850e6fa.js" crossorigin="anonymous"></script>
-    <title>Desafio #01</title>
+    <title>Desafio #01 || Bootstrap</title>
 </head>
+
 <body>
 
-    <div class="hero">
+    <nav class="d-flex flex-column align-items-center justify-content-center px-3 px-sm-5 w-100 Nav">
 
-        <p><span class="textoDestacado">Code</span>Lab</p>
-        <div>
+        <div class="container d-flex flex-column align-items-center gap-5">
 
-            <input class="barraDePesquisa" type="text" placeholder="Pesquisar no blog" />
+            <div class="h1 Titulo"><span class="textoDestacado">Code</span>Lab</div>
+            <input class="form-control mr-sm-2 form-control-lg BarraDePesquisa" type="search" placeholder="Pesquisar no blog" aria-label="Search">
 
-        </div> <!--Barra de pesquisa-->
+        </div>
 
-    </div> <!--Hero-->
+    </nav> <!--Hero-->
 
-    <div class="postagens">
+    <main class="d-flex align-items-center flex-column">
 
-        <div class="postagensCenter">
+        <div class="container d-flex flex-column align-items-center w-100 gap-5 mt-5 pb-5">
 
-            <div id="postagem01" class="postagemCurtida">
+            <div id="postagem01" class="p-5 rounded-3 postagemCurtida">
 
-                <div class="postagemHeader">
+                <div class="d-flex align-items-center justify-content-between">
 
-                    <p>17 de ago.2024</p>
+                    <p class="m-0 textoDestacado">17 de ago, 2024</p>
                     <div class="btnCurtir" onclick="curtirPublicacao('postagem01')">
 
                         <i class="fa-solid fa-heart"></i>
-                        
+
                     </div>
 
                 </div> <!--Data e botão de curtida-->
-                
-                <div class="postagemConteudo">
+
+                <div class="d-flex flex-column">
 
                     <p>O que é linguagem de programação? Conheça as principais</p>
-                    <p class="Texto">Uma das mais populares vertentes da tecnologia da informação, a área de programação segue tendo muita demanda de trabalho justamente pela velocidade com que dispositivos tecnológicos vêm avançando.</p>
+                    <p class="subTitulo">Uma das mais populares vertentes da tecnologia da informação, a área de
+                        programação segue tendo muita demanda de trabalho justamente pela velocidade com que
+                        dispositivos tecnológicos vêm avançando.</p>
 
                 </div> <!--Conteudo-->
 
             </div> <!--Postagem 1-->
 
-            <div id="postagem02" class="postagem">
+            <div id="postagem02" class="p-5 rounded-3 postagem">
 
-                <div class="postagemHeader">
+                <div class="d-flex align-items-center justify-content-between">
 
-                    <p>12 de jul, 2024</p>
+                    <p class="textoDestacado">12 de jul, 2024</p>
                     <div class="btnCurtir" onclick="curtirPublicacao('postagem02')">
 
                         <i class="fa-regular fa-heart"></i>
-                        
+
                     </div>
 
                 </div> <!--Data e botão de curtida-->
-                
-                <div class="postagemConteudo">
+
+                <div class="d-flex flex-column">
 
                     <p>GitHub agora permite fazer login sem precisar de senha</p>
-                    <p class="Texto">O GitHub anunciou nesta quarta-feira (12) o acesso a partir das passkeys, método de autenticação sem senhas. A novidade está disponível em uma versão beta pública e pode substituir a autenticação em dois fatores.</p>
+                    <p class="subTitulo">O GitHub anunciou nesta quarta-feira (12) o acesso a partir das passkeys,
+                        método de autenticação sem senhas. A novidade está disponível em uma versão beta pública e pode
+                        substituir a autenticação em dois fatores.</p>
 
                 </div> <!--Conteudo-->
 
             </div> <!--Postagem 2-->
 
-            <div id="postagem03" class="postagem">
+            <div id="postagem03" class="p-5 rounded-3 postagem">
 
-                <div class="postagemHeader">
+                <div class="d-flex align-items-center justify-content-between">
 
-                    <p>21 de jun, 2024</p>
+                    <p class="textoDestacado">21 de jun, 2024</p>
                     <div class="btnCurtir" onclick="curtirPublicacao('postagem03')">
 
                         <i class="fa-regular fa-heart"></i>
-                        
+
                     </div>
 
                 </div> <!--Data e botão de curtida-->
-                
-                <div class="postagemConteudo">
+
+                <div class="d-flex flex-column">
 
                     <p>Por que os hiperlinks são azuis em sua maioria?</p>
-                    <p class="Texto">Quem navega na internet, certamente já percebeu que ela conta com diversos recursos para tornar a nossa vida mais fácil. Entre essas opções podemos mencionar os hiperlinks – uma palavra ou termo clicável que direciona o leitor.</p>
+                    <p class="subTitulo">Quem navega na internet, certamente já percebeu que ela conta com diversos
+                        recursos para tornar a nossa vida mais fácil. Entre essas opções podemos mencionar os hiperlinks
+                        - uma palavra ou termo clicável que direciona o leitor.</p>
 
                 </div> <!--Conteudo-->
 
             </div> <!--Postagem 3-->
+            
+        </div> <!--Div que centraliza-->
 
-        </div>
-
-    </div> <!--Postagens-->
+    </main> <!--Postagens-->
 
     <script src="./src/scripts/index.js"></script>
-    
+
 </body>
+
 </html>

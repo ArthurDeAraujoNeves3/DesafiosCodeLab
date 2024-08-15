@@ -4,7 +4,7 @@ function curtirPublicacao(id) {
     let icone = publicacao.children[0].children[1].children[0]; //postagem > postagemHeader > btnCurtir > icone
     let className = publicacao.className;
     
-    if ( className == "postagem" ) {
+    if ( className.includes("postagem") && className.includes("postagemCurtida") !== true ) {
 
         icone.classList.remove("fa-regular");
         icone.classList.add("fa-solid");

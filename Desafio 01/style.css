@@ -45,125 +45,70 @@ body {
     
 }
 
-.hero {
+.Nav {
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 20px;
-    gap: 48px;
     background-color: var(--dark20);
-    width: 100%;
     height: 283px;
-}
-/*Titulo*/
-.hero p {
 
-    color: var(--text);
-    font-family: "Title";
-    font-size: 40px;
-    text-align: center;
 }
-/*Code destacado*/
-.hero p .textoDestacado {
+.Titulo {
+
+    font-family: "Title";
+
+}
+.textoDestacado {
 
     color: var(--theme);
 
 }
-/*Barra de pesquisa*/
-.hero div {
+.subTitulo {
 
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    max-width: 100%;
-    width: 1200px;
-    height: 56px;
+    color: var(--text2);
+
+}
+
+.BarraDePesquisa {
+
     background-color: var(--dark30);
-    border: 2px solid var(--dark40);
-    border-radius: var(--border);
-    padding: 16px 24px;
-
-}
-/*Input*/
-.barraDePesquisa {
-
-    background-color: transparent;
-    border: none;
-    outline: none;
     height: 56px;
+    border-color: var(--dark40);
+    border-width: 2px;
     color: var(--text2);
-    font-family: "Text";
-    font-size: 20px;
-    
+
 }
-.barraDePesquisa::placeholder {
+.BarraDePesquisa::placeholder {
 
     color: var(--text2);
-    font-family: "Text";
-    font-size: 20px;
+
+}
+.BarraDePesquisa:focus {
+
+    background-color: var(--dark30);
+    outline: none;
+    border-color: var(--theme);
+    box-shadow: none;
+    color: var(--text2);
     
 }
-
-/*Div que organiza todas as postagens*/
-.postagens {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+/*Botão (x) de limpar o input*/
+[type="search"]::-webkit-search-cancel-button {
+    --webkit-apperance: none;
+    appearance: none;
 }
-.postagensCenter {
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px 20px;
-    padding-bottom: 40px;
-    max-width: 100%;
-    width: 1200px;
-    gap: 40px;
-    margin-top: 50px;
-
-}
 .postagem {
 
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    background-color: var(--dark20);
     border: 2px solid var(--dark40);
-    padding: 40px;
-    border-radius: var(--border);
+    background-color: var(--dark20);
 
 }
-/*Postagem com o efeito de curtida*/
 .postagemCurtida {
 
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    background-color: var(--dark20);
     border: 2px solid var(--theme);
-    padding: 40px;
-    border-radius: var(--border);
+    background-color: var(--dark20);
 
 }
-/*data e botão de curtida*/
-.postagemHeader {
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-
-}
-.postagemHeader p {
-
-    color: var(--theme);
-
-}
 .btnCurtir {
 
     display: flex;
@@ -182,18 +127,5 @@ body {
 .btnCurtir:hover {
 
     background-color: var(--buttonHover);
-
-}
-/*Textos*/
-.postagemConteudo {
-
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-
-}
-.postagemConteudo .Texto {
-
-    color: var(--text2);
 
 }
