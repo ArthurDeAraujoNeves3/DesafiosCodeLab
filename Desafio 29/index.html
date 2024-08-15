@@ -2,34 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Desafio #29</title>
+    <title>Desafio #29 | Bootstrap</title>
 </head>
 <body>
 
-    <header>
+    <header class="d-flex align-items-center justify-content-center">
 
-        <div class="headerCenter">
+        <div class="container d-flex align-items-center justify-content-center justify-content-sm-between Header">
 
-            <div class="RedesSociais">
+            <div class="d-none d-xl-flex align-items-center gap-5">
 
-                <div class="BtnHeader">
+                <div class="d-flex align-items-center justify-content-center BtnHeader">
 
                     <img src="./src/assets/icons/RedesSociais/FacebookLogo.png" alt="Facebook" loading="lazy" draggable="false" />
 
                 </div> <!--Facebook-->
-                <div class="BtnHeader">
+                <div class="d-flex align-items-center justify-content-center BtnHeader">
 
                     <img src="./src/assets/icons/RedesSociais/TwitterLogo.png" alt="Twitter" loading="lazy" draggable="false" />
 
                 </div> <!--Twitter-->
-                <div class="BtnHeader">
+                <div class="d-flex align-items-center justify-content-center BtnHeader">
 
                     <img src="./src/assets/icons/RedesSociais/TwitchLogo.png" alt="Twitch" loading="lazy" draggable="false" />
 
                 </div> <!--Twitch-->
-                <div class="BtnHeader">
+                <div class="d-flex align-items-center justify-content-center BtnHeader">
 
                     <img src="./src/assets/icons/RedesSociais/DiscordLogo.png" alt="Discord" loading="lazy" draggable="false" />
 
@@ -37,82 +38,82 @@
 
             </div> <!--Redes sociais-->
 
-            <div>
+            <figure>
 
                 <img src="./src/assets/img/logo.svg" alt="Blogames" loading="lazy" draggable="false" class="Logo" />
 
-            </div> <!--Logo-->
+            </figure> <!--Logo-->
 
-            <div class="OutrosIcones">
+            <div class="d-none d-sm-flex align-items-center gap-5">
 
-                <div class="BtnHeader">
+                <div class="d-flex align-items-center justify-content-center BtnHeader">
 
                     <img src="./src/assets/icons/Outros/User.png" alt="Perfil" loading="lazy" draggable="false" />
 
                 </div> <!--Perfil-->
-                <div class="BtnHeader">
+                <div class="d-flex align-items-center justify-content-center BtnHeader">
 
                     <img src="./src/assets/icons/Outros/MagnifyingGlass.png" alt="Pesquisar" loading="lazy" draggable="false" />
 
                 </div> <!--Pesquisar-->
-                <div class="BtnHeader">
+                <div class="d-flex align-items-center justify-content-center BtnHeader">
 
                     <img src="./src/assets/icons/Outros/List.png" alt="Menu" loading="lazy" draggable="false" />
 
                 </div> <!--Menu hamburguer-->
-
+                
             </div> <!--Perfil, pesquisa e menu-->
 
         </div>
 
     </header>
 
-    <main>
+    <main class="d-flex align-items-center justify-content-center">
 
-        <div class="MainCenter">
+        <div class="container d-flex flex-column align-items-center justify-content-center pt-3 gap-3">
 
-            <div class="BotoesNavegacao">
+            <nav class="d-flex align-items-center gap-2 NavsBtns">
 
-                <div class="NavBtn">
+                <div class="py-2 px-5 NavBtn">
 
-                    <p>Início</p>
+                    <p class="m-0">Início</p>
 
                 </div> <!--Início-->
-                <div class="NavBtn">
+                <div class="py-2 px-5 NavBtn">
 
-                    <p>Categorias</p>
+                    <p class="m-0">Categorias</p>
 
                 </div> <!--Categorias-->
-                <div class="NavBtn">
+                <div class="py-2 px-5 NavBtn">
 
-                    <p>Sobre</p>
+                    <p class="m-0">Sobre</p>
 
                 </div> <!--Sobre-->
-                <div class="NavBtn">
+                <div class="py-2 px-5 NavBtn">
 
-                    <p>Contato</p>
+                    <p class="m-0">Contato</p>
 
                 </div> <!--Contato-->
 
-            </div> <!--Navs-->
+            </nav> <!--Navs-->
 
-            <div class="Postagens">
+            <div class="d-flex flex-column align-items-center gap-3">
 
-                <div class="PostagensTopo">
+                <div class="d-flex flex-column flex-xl-row align-items-center gap-3">
 
-                    <div class="Postagem" style="background-image: url('./src/assets/img/Postagens/card.png');">
-
-                        <p class="Data">19 de outubro, 2023</p> <!--Data-->
-                        <p class="Title">Xbox: consoles ganham atualização com novos recursos</p>
-
-                    </div> <!--Xbox-->
-                    <div class="Postagem" style="background-image: url('./src/assets/img/Postagens/card2.png');">
+                    <div class="d-flex flex-column justify-content-end w-100 p-3 Postagem" style="background-image: url('./src/assets/img/Postagens/card.png');">
 
                         <p class="Data">19 de outubro, 2023</p> <!--Data-->
                         <p class="Title">Xbox: consoles ganham atualização com novos recursos</p>
 
                     </div> <!--Xbox-->
-                    <div class="Postagem" style="background-image: url('./src/assets/img/Postagens/card3.png');">
+                    <div class="d-flex flex-column justify-content-end w-100 p-3 Postagem" style="background-image: url('./src/assets/img/Postagens/card2.png');">
+
+                        <p class="Data">19 de outubro, 2023</p> <!--Data-->
+                        <p class="Title">Xbox: consoles ganham atualização com novos recursos</p>
+
+                    </div> <!--Xbox-->
+                    <div class="d-flex flex-column justify-content-end w-100 p-3 Postagem" style="background-image: url('./src/assets/img/Postagens/card3.png');">
                         
                         <p class="Data">19 de outubro, 2023</p> <!--Data-->
                         <p class="Title">Xbox: consoles ganham atualização com novos recursos</p>
@@ -120,7 +121,7 @@
                     </div> <!--Xbox-->
 
                 </div>
-                <div class="Postagem" style="background-image: url('./src/assets/img/Postagens/card4.png');">
+                <div class="d-flex flex-column justify-content-end w-100 p-3 Postagem" style="background-image: url('./src/assets/img/Postagens/card4.png');">
 
                     <p class="Data">19 de outubro, 2023</p> <!--Data-->
                     <p class="Title">Xbox: consoles ganham atualização com novos recursos</p>
@@ -129,9 +130,9 @@
 
             </div> <!--Postagens-->
 
-            <div class="CarregarMais">
+            <div class="d-flex align-items-center flex-row py-2 px-5 CarregarMais">
 
-                <p>Carregar mais</p>
+                <p class="text-uppercase m-0">Carregar mais</p>
                 <img src="./src/assets/icons/Outros/CaretDown.png" alt="Carregar mais" loading="lazy" draggable="false" />
 
             </div> <!--Carregar mais-->
@@ -140,32 +141,32 @@
 
     </main>
 
-    <footer>
+    <footer class="d-flex align-items-center justify-content-center w-100 mt-3 py-2 Footer">
 
-        <div class="footerCenter">
+        <div class="container d-flex align-items-start align-items-xl-center flex-column flex-xl-row justify-content-center w-100 FooterCenter">
 
-            <div class="Linguagens">
+            <div class="d-flex align-items-center flex-row py-2 px-5 gap-4 Linguagens">
 
-                <p>PT-BR</p>
+                <p class="m-0">PT-BR</p>
                 <img src="./src/assets/icons/Outros/CaretDown.png" alt="Carregar mais" loading="lazy" draggable="false" />
 
             </div> <!--Escolher idiomas-->
 
-            <div class="BotoesNavegacao">
+            <div class="d-flex align-items-start align-items-xl-center flex-xl-row flex-column gap-0 gap-xl-5">
 
-                <div class="NavBtn">
+                <div class="py-2 px-5 NavBtn">
 
-                    <p>Sobre</p>
+                    <p class="m-0">Sobre</p>
 
                 </div> <!--Sobre-->
-                <div class="NavBtn">
+                <div class="py-2 px-5 NavBtn">
 
-                    <p>Termos de serviços</p>
+                    <p class="m-0">Termos de serviços</p>
 
                 </div> <!--Termos-->
-                <div class="NavBtn">
+                <div class="py-2 px-5 NavBtn">
 
-                    <p>Política de privacidade</p>
+                    <p class="m-0">Política de privacidade</p>
 
                 </div> <!--Política-->
                 
