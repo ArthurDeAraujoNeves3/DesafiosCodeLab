@@ -44,34 +44,8 @@ body {
     
 }
 
-/*Apenas para colocar o padding horizontal*/
-header {
-    
-    padding: 10px 20px;
-
-}
-.headerCenter {
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 100%;
-    width: 1200px;
-
-}
-.RedesSociais {
-
-    display: flex;
-    align-items: center;
-    gap: 24px;
-
-}
 .BotaoRedeSocial {
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: rgb(255, 255, 255, .2);
     width: 40px;
     height: 40px;
@@ -87,63 +61,23 @@ header {
 
 }
 
-.HeroCenter {
-
-    padding: 0px 20px;
-
-}
-.Hero {
-
-    display: flex;
-    align-items: center;
-    max-width: 100%;
-    justify-content: space-between;
-    width: 1200px;
-    margin: 0 auto;
-
-}
-.Textos {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-    width: 400px;
-    gap: 32px;
-
-}
-.Obra {
-
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-
-}
-/*Título do filme*/
-.Obra div .Titulo {
+.Titulo {
 
     font-family: "Title";
     font-size: 40px;
 
 }
 
-/*Div que organiza os botões*/
-.Botoes {
+.Textos {
 
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 15px;
+    max-width: 100% !important;
+    width: 400px !important;
 
 }
+
 .BtnAssistir {
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    min-width: 200px;
-    width: 100%;
+    max-width: 100%;
     height: 40px;
     background-color: var(--theme);
     border-radius: var(--border);
@@ -158,14 +92,10 @@ header {
     filter: brightness(.7);
 
 }
+
 .BtnTrailer {
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    min-width: 200px;
-    width: 100%;
+    max-width: 100%;
     height: 40px;
     border: 2px solid var(--theme);
     border-radius: var(--border);
@@ -183,13 +113,6 @@ header {
 
 }
 
-.Ilustracoes {
-
-    max-width: 100%;
-    display: flex;
-    align-items: flex-start;
-
-}
 .Fantasma1 {
 
     max-width: 100%;
@@ -205,16 +128,6 @@ header {
 
 @media screen and (max-width: 1100px) {
 
-    .Hero {
-
-        flex-direction: column-reverse;
-
-    }
-    .Botoes {
-
-        flex-direction: column;
-
-    }
     .Fantasma1 {
 
         width: 200px;
@@ -229,17 +142,6 @@ header {
 }
 @media screen and (max-width: 550px) {
 
-    .headerCenter {
-
-        justify-content: center;
-
-    }
-    .RedesSociais {
-
-        display: none;
-        visibility: hidden;
-
-    }
     .Fantasma1 {
 
         width: 120px;

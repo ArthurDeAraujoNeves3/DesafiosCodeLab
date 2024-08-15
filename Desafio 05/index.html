@@ -1,41 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/736850e6fa.js" crossorigin="anonymous"></script>
-    <title>Desafio #05</title>
+    <title>Desafio #05 | Bootstrap</title>
 </head>
 <body>
 
-    <header>
+    <header class="py-2 px-5">
         
-        <div class="headerCenter">
+        <div class="container d-flex align-items-center justify-content-center justify-content-sm-between">
 
-            <div class="Logo">
+            <figure>
 
-                <img src="./src/assets/img/Logo.png" alt="Studio Ghibli" loading="lazy" draggable="false" />
+                <img src="./src/assets/img/Logo.png" alt="Studio Ghibli" loading="lazy" draggable="false" class="img-fluid" />
 
-            </div> <!--Logo-->
-            <div class="RedesSociais">
+            </figure> <!--Logo-->
+            <div class="d-none d-sm-flex align-items-center gap-4">
 
-                <div class="BotaoRedeSocial">
+                <div class="d-flex align-items-center justify-content-center BotaoRedeSocial">
 
                     <img src="./src/assets/icons/Buttons/Gmail.png" alt="Google" loading="lazy" draggable="false" />
 
                 </div> <!--Botão google-->
-                <div class="BotaoRedeSocial">
+                <div class="d-flex align-items-center justify-content-center  BotaoRedeSocial">
 
                     <img src="./src/assets/icons/Buttons/Facebook.png" alt="Facebook" loading="lazy" draggable="false" />
 
                 </div> <!--Botão facebook-->
-                <div class="BotaoRedeSocial">
+                <div class="d-flex align-items-center justify-content-center  BotaoRedeSocial">
 
                     <img src="./src/assets/icons/Buttons/Twitter.png" alt="Twitter" loading="lazy" draggable="false" />
 
                 </div> <!--Botão twitter-->
-                <div class="BotaoRedeSocial">
+                <div class="d-flex align-items-center justify-content-center  BotaoRedeSocial">
 
                     <img src="./src/assets/icons/Buttons/Instagram.png" alt="Instagram" loading="lazy" draggable="false" />
 
@@ -47,17 +48,17 @@
 
     </header>
 
-    <div class="HeroCenter">
+    <main>
 
-        <div class="Hero">
+        <div class="container d-flex align-items-center flex-column-reverse justify-content-between flex-xl-row w-100">
 
-            <div class="Textos">
+            <div class="d-flex flex-column aling-items-center w-100 Textos">
 
-                <div class="Obra">
+                <div class="w-100 d-flex flex-column">
 
-                    <div>
+                    <div class="">
 
-                        <p class="Autor">HAYAO MIYAZAKI</p>
+                        <p class="m-0">HAYAO MIYAZAKI</p>
                         <p class="Titulo">A VIAGEM DE CHIHIRO</p>
 
                     </div> <!--Titulo-->
@@ -65,17 +66,17 @@
 
                 </div> <!--Autor, título e descrição-->
 
-                <div class="Botoes">
+                <div class="w-100 d-flex flex-column flex-xl-row align-items-center gap-4">
 
-                    <div class="BtnAssistir">
+                    <div class="d-flex align-items-center justify-content-center gap-2 w-100 BtnAssistir">
 
                         <i class="fa-solid fa-play"></i>
-                        <p>Assistir agora</p>
+                        <p class="m-0">Assistir agora</p>
 
                     </div> <!--Botão para ver o filme-->
-                    <div class="BtnTrailer">
+                    <div class="d-flex align-items-center justify-content-center gap-2 w-100 BtnTrailer">
 
-                        <p>Assista o trailer</p>
+                        <p class="m-0">Assista o trailer</p>
                     
                     </div> <!--Botão para ver ao trailer-->
 
@@ -83,7 +84,7 @@
 
             </div> <!--Textos-->
 
-            <div class="Ilustracoes">
+            <div class="d-flex align-items-start">
 
                 <img src="./src/assets/img/Ghost1.png" alt="Fantasma 1" loading="lazy" draggable="false" class="Fantasma1" />
                 <img src="./src/assets/img/Ghost2.png" alt="Fantasma 2" loading="lazy" draggable="false" class="Fantasma2" />
@@ -92,7 +93,7 @@
 
         </div>
 
-    </div> <!--Hero-->
+    </main> <!--Hero-->
     
 </body>
 </html>
