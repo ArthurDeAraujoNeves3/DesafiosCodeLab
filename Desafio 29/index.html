@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/736850e6fa.js" crossorigin="anonymous"></script>
     <title>Desafio #29</title>
 </head>
 <body>
@@ -37,11 +38,11 @@
 
             </div> <!--Redes sociais-->
 
-            <div>
+            <figure>
 
                 <img src="./src/assets/img/logo.svg" alt="Blogames" loading="lazy" draggable="false" class="Logo" />
 
-            </div> <!--Logo-->
+            </figure> <!--Logo-->
 
             <div class="OutrosIcones">
 
@@ -55,7 +56,7 @@
                     <img src="./src/assets/icons/Outros/MagnifyingGlass.png" alt="Pesquisar" loading="lazy" draggable="false" />
 
                 </div> <!--Pesquisar-->
-                <div class="BtnHeader">
+                <div onclick="openMenu()" class="BtnHeader">
 
                     <img src="./src/assets/icons/Outros/List.png" alt="Menu" loading="lazy" draggable="false" />
 
@@ -64,6 +65,47 @@
             </div> <!--Perfil, pesquisa e menu-->
 
         </div>
+
+        <div class="MenuHamburguerOpened">
+
+            <div onclick="openMenu()" class="CloseButtonMenu">
+
+                <i class="fa-solid fa-x"></i>
+
+            </div>
+
+            <figure>
+
+                <img src="./src/assets/img/logo.svg" alt="Blogames" loading="lazy" draggable="false" class="LogoMenu" />
+
+            </figure> <!--Logo-->
+
+            <div class="RedesSociaisMenu">
+
+                <div class="BtnHeader">
+
+                    <img src="./src/assets/icons/RedesSociais/FacebookLogo.png" alt="Facebook" loading="lazy" draggable="false" />
+
+                </div> <!--Facebook-->
+                <div class="BtnHeader">
+
+                    <img src="./src/assets/icons/RedesSociais/TwitterLogo.png" alt="Twitter" loading="lazy" draggable="false" />
+
+                </div> <!--Twitter-->
+                <div class="BtnHeader">
+
+                    <img src="./src/assets/icons/RedesSociais/TwitchLogo.png" alt="Twitch" loading="lazy" draggable="false" />
+
+                </div> <!--Twitch-->
+                <div class="BtnHeader">
+
+                    <img src="./src/assets/icons/RedesSociais/DiscordLogo.png" alt="Discord" loading="lazy" draggable="false" />
+
+                </div> <!--Discord-->
+
+            </div> <!--Redes sociais-->
+
+        </div> <!--Menu hamburguer-->
 
     </header>
 
@@ -174,6 +216,8 @@
         </div>
 
     </footer>
+
+    <script src="./src/scripts/Menu.js"></script>
     
 </body>
 </html>
