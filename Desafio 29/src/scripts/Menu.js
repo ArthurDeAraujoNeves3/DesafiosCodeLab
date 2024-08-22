@@ -1,4 +1,4 @@
-const Menu = document.querySelector(".MenuHamburguerOpened");
+const Menu = document.querySelector(".MenuHamburguer");
 
 function openMenu() {
 
