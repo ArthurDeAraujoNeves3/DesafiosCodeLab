@@ -4,69 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/736850e6fa.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Desafio #29 | Bootstrap</title>
 </head>
 <body>
 
-    <header class="d-flex align-items-center justify-content-center">
+    <nav class="navbar navbar-light bg-light px-5 py-2 Header">
 
-        <div class="container d-flex align-items-center justify-content-center justify-content-sm-between Header">
+        <nav class="d-none d-xl-flex align-items-center gap-5">
 
-            <nav class="d-none d-xl-flex align-items-center gap-5">
+            <div class="d-flex align-items-center justify-content-center BtnHeader">
 
-                <div class="d-flex align-items-center justify-content-center BtnHeader">
+                <img src="./src/assets/icons/RedesSociais/FacebookLogo.png" alt="Facebook" loading="lazy" draggable="false" />
+
+            </div> <!--Facebook-->
+            <div class="d-flex align-items-center justify-content-center BtnHeader">
+
+                <img src="./src/assets/icons/RedesSociais/TwitterLogo.png" alt="Twitter" loading="lazy" draggable="false" />
+
+            </div> <!--Twitter-->
+            <div class="d-flex align-items-center justify-content-center BtnHeader">
+
+                <img src="./src/assets/icons/RedesSociais/TwitchLogo.png" alt="Twitch" loading="lazy" draggable="false" />
+
+            </div> <!--Twitch-->
+            <div class="d-flex align-items-center justify-content-center BtnHeader">
+
+                <img src="./src/assets/icons/RedesSociais/DiscordLogo.png" alt="Discord" loading="lazy" draggable="false" />
+
+            </div> <!--Discord-->
+
+        </nav> <!--Redes sociais-->
+
+        <figure>
+
+            <img src="./src/assets/img/logo.svg" alt="Blogames" loading="lazy" draggable="false" class="Logo" />
+
+        </figure> <!--Logo-->
+
+        <nav class="d-flex align-items-center gap-5">
+
+            <div class="d-none d-sm-flex align-items-center justify-content-center BtnHeader">
+
+                <img src="./src/assets/icons/Outros/User.png" alt="Perfil" loading="lazy" draggable="false" />
+
+            </div> <!--Perfil-->
+            <div class="d-none d-sm-flex align-items-center justify-content-center BtnHeader">
+
+                <img src="./src/assets/icons/Outros/MagnifyingGlass.png" alt="Pesquisar" loading="lazy" draggable="false" />
+
+            </div> <!--Pesquisar-->
+            <div onclick="openMenu()" class="d-flex align-items-center justify-content-center BtnHeader">
+
+                <img src="./src/assets/icons/Outros/List.png" alt="Menu" loading="lazy" draggable="false" />
+
+            </div> <!--Menu hamburguer-->
+            
+        </nav> <!--Perfil, pesquisa e menu-->
+
+        <div class="MenuHamburguer">
+
+            <div onclick="openMenu()" class="CloseButtonMenu">
+
+                <i class="fa-solid fa-x"></i>
+
+            </div>
+
+            <figure>
+
+                <img src="./src/assets/img/logo.svg" alt="Blogames" loading="lazy" draggable="false" class="LogoMenu" />
+
+            </figure> <!--Logo-->
+
+            <div class="RedesSociaisMenu">
+
+                <div class="BtnHeader">
 
                     <img src="./src/assets/icons/RedesSociais/FacebookLogo.png" alt="Facebook" loading="lazy" draggable="false" />
 
                 </div> <!--Facebook-->
-                <div class="d-flex align-items-center justify-content-center BtnHeader">
+                <div class="BtnHeader">
 
                     <img src="./src/assets/icons/RedesSociais/TwitterLogo.png" alt="Twitter" loading="lazy" draggable="false" />
 
                 </div> <!--Twitter-->
-                <div class="d-flex align-items-center justify-content-center BtnHeader">
+                <div class="BtnHeader">
 
                     <img src="./src/assets/icons/RedesSociais/TwitchLogo.png" alt="Twitch" loading="lazy" draggable="false" />
 
                 </div> <!--Twitch-->
-                <div class="d-flex align-items-center justify-content-center BtnHeader">
+                <div class="BtnHeader">
 
                     <img src="./src/assets/icons/RedesSociais/DiscordLogo.png" alt="Discord" loading="lazy" draggable="false" />
 
                 </div> <!--Discord-->
 
-            </nav> <!--Redes sociais-->
+            </div> <!--Redes sociais-->
 
-            <figure>
-
-                <img src="./src/assets/img/logo.svg" alt="Blogames" loading="lazy" draggable="false" class="Logo" />
-
-            </figure> <!--Logo-->
-
-            <nav class="d-none d-sm-flex align-items-center gap-5">
-
-                <div class="d-flex align-items-center justify-content-center BtnHeader">
-
-                    <img src="./src/assets/icons/Outros/User.png" alt="Perfil" loading="lazy" draggable="false" />
-
-                </div> <!--Perfil-->
-                <div class="d-flex align-items-center justify-content-center BtnHeader">
-
-                    <img src="./src/assets/icons/Outros/MagnifyingGlass.png" alt="Pesquisar" loading="lazy" draggable="false" />
-
-                </div> <!--Pesquisar-->
-                <div class="d-flex align-items-center justify-content-center BtnHeader">
-
-                    <img src="./src/assets/icons/Outros/List.png" alt="Menu" loading="lazy" draggable="false" />
-
-                </div> <!--Menu hamburguer-->
-                
-            </nav> <!--Perfil, pesquisa e menu-->
-
-        </div>
-
-    </header>
+        </div> <!--Menu hamburguer-->
+        
+    </nav>
 
     <main class="d-flex align-items-center justify-content-center">
 
@@ -143,9 +181,9 @@
 
     <footer class="d-flex align-items-center justify-content-center w-100 mt-3 py-2 Footer">
 
-        <div class="container d-flex align-items-start align-items-xl-center flex-column flex-xl-row justify-content-center w-100 FooterCenter">
+        <section class="container d-flex align-items-start align-items-xl-center flex-column flex-xl-row justify-content-center w-100 FooterCenter">
 
-            <div class="d-flex align-items-center flex-row py-2 px-5 gap-4 Linguagens">
+            <article class="d-flex align-items-center flex-row py-2 px-5 gap-4 Linguagens">
 
                 <p class="m-0">PT-BR</p>
 
@@ -155,7 +193,7 @@
 
                 </figure>
 
-            </div> <!--Escolher idiomas-->
+            </article> <!--Escolher idiomas-->
 
             <nav class="d-flex align-items-start align-items-xl-center flex-xl-row flex-column gap-0 gap-xl-5">
 
@@ -177,9 +215,11 @@
                 
             </nav> <!--Navs-->
 
-        </div>
+        </section>
 
     </footer>
+
+    <script src="./src/scripts/main.js"></script>
     
 </body>
 </html>

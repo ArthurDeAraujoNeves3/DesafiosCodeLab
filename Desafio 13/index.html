@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -7,111 +8,144 @@
     <link rel="stylesheet" href="style.css">
     <title>Desafio #13</title>
 </head>
+
 <body>
 
-    <header class="fixed-top w-100 d-flex align-items-center justify-content-between px-3 py-2">
-        <p class="Titulo p-0">Arthur A.</p>
+    <header class="fixed-top w-100 d-flex align-items-center justify-content-between px-3 py-4">
+        
+        <p class="Titulo m-0 ">Arthur A.</p>
         <nav class="NavsBtns d-flex gap-3">
             <a href="#inicio" class="NavBtn text-light">Início</a>
             <a href="#sobreMim" class="NavBtn text-light">Sobre mim</a>
             <a href="#projetos" class="NavBtn text-light">Projetos</a>
+
         </nav>
     </header>
 
-    <main id="inicio" class="pt-5 mt-5">
+    <main id="inicio" class="pt-5">
+
         <section class="Hero d-flex align-items-center justify-content-center py-5 ">
-            <div class="HeroCenter container d-flex align-items-center justify-content-between">
-                <article class="Apresentacao d-flex flex-column gap-2">
+
+            <article class="HeroCenter container d-flex align-items-center justify-content-between">
+
+                <section class="Apresentacao d-flex flex-column gap-2">
                     <p class="Saudacao">Olá, eu sou</p>
-                    <p class="Nomey">Arthur de Araujo Neves</p>
+                    <p class="Nome">Arthur de Araujo Neves</p>
                     <p class="Saudacao">Sou desenvolvedor Frontend & </p>
                     <button class="MeuGithub btn btn-primary">Github</button>
-                </article>
+                </section>
+
                 <figure class="Imagem">
-                    <img src="./src/assets/img/office-man-programmer-writing-code-and-making-web-design-on-a-pc.png" alt="Imagem ilustrativa de Arthur" class="img-fluid" loading="eager" draggable="false">
+                    <img src="./src/assets/img/office-man-programmer-writing-code-and-making-web-design-on-a-pc.png"
+                        alt="Imagem ilustrativa de Arthur" class="img-fluid" loading="eager" draggable="false">
                 </figure>
-            </div>
+
+            </article>
+
         </section>
 
         <section id="sobreMim" class="SobreMim d-flex align-items-center justify-content-center py-5">
-            <div class="SobreMimCenter container d-flex flex-column gap-4">
-                <article class="Textos d-flex flex-column gap-4">
+            
+            <article class="SobreMimCenter container d-flex flex-column gap-4">
+
+                <section class="Textos d-flex flex-column gap-4">
+
                     <h1 class="Titulo">Sobre mim</h1>
                     <p class="Localizacao">Juazeiro do Norte, Brasil</p>
                     <p class="Descricao">Meu nome é Arthur de Araujo Neves, sou desenvolvedor frontend, cursando o curso de informátiva na E.E.E.P Aderson Borges de Carvalho.</p>
-                </article>
+                </section>
+
                 <button class="Botao btn btn-primary">Baixar currículo</button>
-            </div>
+            
+            </article>
+
         </section>
 
         <section id="projetos" class="Projetos container d-flex flex-column align-items-center justify-content-center gap-4 py-5 ">
+
             <h1 class="Titulo">Projetos</h1>
+
             <article class="ProjetosCenter  align-items-center justify-center row">
 
-                <div class="Projeto col card text-light border-0">
-                    <figure class="Banner">
-                        <img src="./src/assets/img/Banner/CodeLab.png" class="card-img-top" alt="Foto do projeto" loading="lazy" draggable="false">
+                <div class="Projeto card p-0">
 
-                    </figure>
-                    <div class="Detalhes card-body d-flex flex-column gap-2">
-                        <div class="Informacoes">
-                            <p class="Titulo card-title">CodeLab</p>
-                            <p class="Descricao card-text">Desafio #01 do CodeLab</p>
-                        </div>
-                        <div class="Botoes d-flex flex-column gap-2">
-                            <a href="https://arthurdearaujoneves3.github.io/DesafiosCodeLab/Desafio%2001/" class="Botao btn btn-primary">Ver site</a>
-                            <a href="https://github.com/ArthurDeAraujoNeves3/DesafiosCodeLab/tree/main/Desafio%2001" class="BotaoSecundario btn btn-outline-primary">Github</a>
-                        </div>
-                    </div>
-                </div>
+                    <img src="./src/assets/img/Banner/CodeLab.png" class="card-img-top" alt="Codelab">
 
-                <div class="Projeto col card text-light border-0">
-                    <figure class="Banner">
-                        <img src="./src/assets/img/Banner/TechBLog.png" class="card-img-top" alt="Foto do projeto" loading="lazy" draggable="false">
-                    </figure>
-                    <div class="Detalhes card-body d-flex flex-column gap-2">
-                        <div class="Informacoes">
-                            <p class="Titulo card-title">TechBlog</p>
-                            <p class="Descricao card-text">Desafio #03 do CodeLab</p>
-                        </div>
-                        <div class="Botoes d-flex flex-column gap-2">
-                            <a href="https://arthurdearaujoneves3.github.io/DesafiosCodeLab/Desafio%2003/" class="Botao btn btn-primary">Ver site</a>
-                            <a href="https://github.com/ArthurDeAraujoNeves3/DesafiosCodeLab/tree/main/Desafio%2003" class="BotaoSecundario btn btn-outline-primary">Github</a>
-                        </div>
-                    </div>
-                </div>
+                    <div class="card-body">
 
-                <div class="Projeto col card text-light border-0">
-                    <figure class="Banner">
-                        <img src="./src/assets/img/Banner/ViagemDeChihiro.png" class="card-img-top" alt="Foto do projeto" loading="lazy" draggable="false">
-                    </figure>
-                    <div class="Detalhes card-body d-flex flex-column gap-2">
-                        <div class="Informacoes">
-                            <p class="Titulo card-title">A Viagem de Chihiro</p>
-                            <p class="Descricao card-text">Desafio #05 do CodeLab</p>
-                        </div>
-                        <div class="Botoes d-flex flex-column gap-2">
-                            <a href="https://arthurdearaujoneves3.github.io/DesafiosCodeLab/Desafio%2005/" class="Botao btn btn-primary">Ver site</a>
-                            <a href="https://github.com/ArthurDeAraujoNeves3/DesafiosCodeLab/tree/main/Desafio%2005" class="BotaoSecundario btn btn-outline-primary">Github</a>
-                        </div>
-                    </div>
-                </div>
+                      <h5 class="Titulo card-title">CodeLab</h5>
+                      <p class="Descricao card-text">Desafio #01 do CodeLab</p>
 
-                <div class="Projeto col card text-light border-0">
-                    <figure class="Banner">
-                        <img src="./src/assets/img/Banner/Blogames.png" class="card-img-top" alt="Foto do projeto" loading="lazy" draggable="false">
-                    </figure>
-                    <div class="Detalhes card-body d-flex flex-column gap-2">
-                        <div class="Informacoes">
-                            <p class="Titulo card-title">Blogames</p>
-                            <p class="Descricao card-text">Desafio #29 do CodeLab</p>
-                        </div>
-                        <div class="Botoes d-flex flex-column gap-2">
-                            <a href="https://arthurdearaujoneves3.github.io/DesafiosCodeLab/Desafio%2029/" class="Botao btn btn-primary">Ver site</a>
-                            <a href="https://github.com/ArthurDeAraujoNeves3/DesafiosCodeLab/tree/main/Desafio%2029" class="BotaoSecundario btn btn-outline-primary">Github</a>
-                        </div>
+                      <div class="d-flex flex-column gap-1">
+
+                            <a href="https://arthurdearaujoneves3.github.io/DesafiosCodeLab/Desafio%2001/" class="btn btn-primary">Ver site</a>
+                            <a href="https://github.com/ArthurDeAraujoNeves3/DesafiosCodeLab/tree/main/Desafio%2001" class="btn btn-secondary">Github</a>
+
+                      </div>
+
                     </div>
-                </div>
+
+                </div> <!--CodeLab-->
+
+                <div class="Projeto card p-0">
+
+                    <img src="./src/assets/img/Banner/TechBLog.png" class="card-img-top" alt="Codelab">
+
+                    <div class="card-body">
+
+                      <h5 class="Titulo card-title">TechBlog</h5>
+                      <p class="Descricao card-text">Desafio #03 do CodeLab</p>
+
+                      <div class="d-flex flex-column gap-1">
+
+                            <a href="https://arthurdearaujoneves3.github.io/DesafiosCodeLab/Desafio%2003/" class="btn btn-primary">Ver site</a>
+                            <a href="https://github.com/ArthurDeAraujoNeves3/DesafiosCodeLab/tree/main/Desafio%2003" class="btn btn-secondary">Github</a>
+
+                      </div>
+
+                    </div>
+
+                </div> <!--TechBlog-->
+
+                <div class="Projeto card p-0">
+
+                    <img src="./src/assets/img/Banner/ViagemDeChihiro.png" class="card-img-top" alt="Codelab">
+
+                    <div class="card-body">
+
+                      <h5 class="Titulo card-title">A Viagem de Chihiro</h5>
+                      <p class="Descricao card-text">Desafio #05 do CodeLab</p>
+
+                      <div class="d-flex flex-column gap-1">
+
+                            <a href="https://arthurdearaujoneves3.github.io/DesafiosCodeLab/Desafio%2005/" class="btn btn-primary">Ver site</a>
+                            <a href="https://github.com/ArthurDeAraujoNeves3/DesafiosCodeLab/tree/main/Desafio%2005" class="btn btn-secondary">Github</a>
+
+                      </div>
+
+                    </div>
+
+                </div> <!--A viagem de chihiro-->
+
+                <div class="Projeto card p-0">
+
+                    <img src="./src/assets/img/Banner/Blogames.png" class="card-img-top" alt="Codelab">
+
+                    <div class="card-body">
+
+                      <h5 class="Titulo card-title">Blogames</h5>
+                      <p class="Descricao card-text">Desafio #29 do CodeLab</p>
+
+                      <div class="d-flex flex-column gap-1">
+
+                            <a href="https://arthurdearaujoneves3.github.io/DesafiosCodeLab/Desafio%2029/" class="btn btn-primary">Ver site</a>
+                            <a href="https://github.com/ArthurDeAraujoNeves3/DesafiosCodeLab/tree/main/Desafio%2029" class="btn btn-secondary">Github</a>
+
+                      </div>
+
+                    </div>
+
+                </div> <!--Blogames-->
 
             </article>
         </section>
@@ -123,4 +157,5 @@
 
     <script src="../Bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
